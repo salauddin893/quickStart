@@ -1,0 +1,82 @@
+/*--
+    - color
+-----------------------------------------*/
+.color {
+	color: $global-color;
+}
+.black-color{
+	color: $black;
+}
+.white-color {
+	color: $white;
+}
+
+.blue-color-300 {
+	color: $blue-300;
+}
+
+.blue-color-600 {
+	color: $blue-600;
+}
+
+.pink-color {
+	color: #7f8c9f;
+}
+
+.gray-pink h1 {
+	color: #141f4e;
+}
+
+.icon-blue{
+	color: #4891FE;
+}
+.icon-orange{
+	color: #FF614C;
+}
+.icon-green{
+	color: #00EAA9;
+}
+
+/*--
+	-Text Gradient Color
+-------------------------------------*/
+.blue-text-gradient {
+	background: linear-gradient(141deg, #789BF6 0%, #AF9EDE 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.green-text-gradient {
+	background: transparent linear-gradient(85deg, #9DC3EA 0%, #00F4E5 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.pink-text-gradient {
+	background: transparent linear-gradient(141deg, #5612EB 0%, #AF9EDE 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.red-text-gradient {
+	background: transparent linear-gradient(144deg, #E35287 0%, #9459FA 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+.blue-text-color {
+	color: rgb(20, 31, 78);
+}
+
+
+/*--
+    - Background color
+-----------------------------------------*/
+.bg-blue{
+	background-color: #20123a;
+}
+.theme-bg-gradient-1 {
+	background: transparent linear-gradient(141deg, #789BF6 0%, #AF9EDE 100%);
+}
+.theme-bg-gradient-2{
+	background: transparent linear-gradient(85deg, #9DC3EA 0%, #00F4E5 100%);
+}

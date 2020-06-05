@@ -1,0 +1,386 @@
+/*
+Template Name: Coffee Shop - HTML Page
+Author       : The UX Lab
+Version      : 1.0
+*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500|Raleway:400,500,600,700,900|Rubik:400,500,700&display=swap");
+@keyframes pulsate1 {
+  0% {
+    transform: scale(0.6);
+    opacity: 1;
+    box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75), 0px 0px 25px 10px rgba(255, 255, 255, 0.75);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+    box-shadow: none;
+  }
+}
+@keyframes toTopFromBottom {
+  49% {
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@keyframes toRightFromLeft {
+  49% {
+    transform: translate(100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+@keyframes toLeftFromRight {
+  49% {
+    transform: translate(-100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(100%);
+  }
+  51% {
+    opacity: 1;
+  }
+}
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  color: #818181;
+  font-size: 16px;
+  line-height: 32px;
+  background-color: #000 !important;
+}
+
+.img,
+img {
+  max-width: 100%;
+  transition: 0.3s ease-out;
+}
+
+a,
+.button {
+  transition: 0.3s ease-out;
+}
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+a,
+button {
+  color: inherit;
+  outline: medium none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+  outline: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  background: #c2cfff;
+  width: 85px;
+  height: 3px;
+  margin: 35px 0;
+  padding: 0;
+  border: none;
+}
+@media (min-width: 768px) {
+  hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+label {
+  color: #1D1F21;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.scrollToTop {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  background-image: -ms-linear-gradient(0deg, #e671a5 0%, #f6ada8 100%);
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  display: none;
+  z-index: 99;
+  border: 1px solid #fff;
+}
+.scrollToTop:hover {
+  color: #fff;
+}
+
+::selection {
+  background: #1D1F21;
+  text-shadow: none;
+}
+
+.btn.focus, .btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.owl-stage-outer {
+  height: 100%;
+}
+
+/*--
+    - color
+-----------------------------------------*/
+.color {
+  color: #818181;
+}
+
+.black-color {
+  color: #1D1F21;
+}
+
+.white-color {
+  color: #fff;
+}
+
+.blue-color-300 {
+  color: #7B80DE;
+}
+
+.blue-color-600 {
+  color: #141F4E;
+}
+
+.pink-color {
+  color: #7f8c9f;
+}
+
+.gray-pink h1 {
+  color: #141f4e;
+}
+
+.icon-blue {
+  color: #4891FE;
+}
+
+.icon-orange {
+  color: #FF614C;
+}
+
+.icon-green {
+  color: #00EAA9;
+}
+
+/*--
+	-Text Gradient Color
+-------------------------------------*/
+.blue-text-gradient {
+  background: linear-gradient(141deg, #789BF6 0%, #AF9EDE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: transparent linear-gradient(85deg, #9DC3EA 0%, #00F4E5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: transparent linear-gradient(141deg, #5612EB 0%, #AF9EDE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.red-text-gradient {
+  background: transparent linear-gradient(144deg, #E35287 0%, #9459FA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blue-text-color {
+  color: #141f4e;
+}
+
+/*--
+    - Background color
+-----------------------------------------*/
+.bg-blue {
+  background-color: #20123a;
+}
+
+.theme-bg-gradient-1 {
+  background: transparent linear-gradient(141deg, #789BF6 0%, #AF9EDE 100%);
+}
+
+.theme-bg-gradient-2 {
+  background: transparent linear-gradient(85deg, #9DC3EA 0%, #00F4E5 100%);
+}
+
+/*--------------------------------------
+	- Button
+----------------------------------------*/
+.menu li {
+  display: inline-block;
+  padding-right: 35px !important;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s ease-out;
+}
+@media (min-width: 768px) {
+  .menu li {
+    padding-left: 11px;
+  }
+}
+@media (min-width: 992px) {
+  .menu li {
+    padding-left: 6px;
+  }
+}
+.menu li:hover {
+  color: #e63a34;
+}
+.menu li a {
+  transition: 0.3s ease-out;
+  padding: 20px 0;
+  text-transform: uppercase;
+}
+.menu li.submenu {
+  position: relative;
+}
+.menu li.submenu:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 50px;
+}
+.menu li.submenu ul {
+  padding: 20px 15px;
+  position: absolute;
+  top: 150px;
+  width: 250px;
+  background-color: #fff;
+  color: #000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  text-align: left;
+  border-top: 4px solid #1D1F21;
+}
+.menu li.submenu ul li a {
+  width: 100%;
+  display: block;
+}
+.menu li.submenu ul li {
+  display: block;
+  padding: 0 !important;
+  border-radius: 5px;
+}
+.menu li.submenu ul li a {
+  width: 100%;
+  padding-left: 20px;
+  padding: 10px;
+}
+.menu li.submenu ul li:hover {
+  background: #1D1F21;
+}
+.menu li.submenu ul li a:hover {
+  color: #fff;
+}
+
+.bg-black {
+  background: #000;
+}
+
+.bg-white {
+  background: #fff;
+}
+
+/*----------------------------------------*/
+/*  02. Header Area
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*  15. Footer Area
+/*----------------------------------------*/

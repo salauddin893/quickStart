@@ -1,0 +1,34 @@
+// Font Family
+$rubik: 'Rubik', sans-serif;
+$raleway: 'Raleway', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+
+
+// Global Color 
+$global-color: #818181;
+
+// Colors ---------------
+$black: #1D1F21;
+$white: #fff;
+$blue-600: #141F4E;
+$blue-300: #7B80DE;
+$red: #EE008A;
+$btn-graident: transparent linear-gradient(141deg, #9DC3EA 0%, #00F4E5 100%);
+
+
+// Browser Prefixes - Which CSS prefixes should be used?
+$webkit: true !default;
+$moz: false !default;
+$ms: false !default;
+$o: false !default;
+
+
+// Responsive Variables
+$desktop: '(min-width: 1367px)';
+$xl:'(min-width: 1200px)';
+$lg:'(min-width: 992px)';
+$md:'(min-width: 768px)';
+$sm: '(min-width: 576px)';
+$mobile: '(max-width: 576px)';
+$xs: '(max-width: 767px)';
+$ms: '(max-width: 415px)';
